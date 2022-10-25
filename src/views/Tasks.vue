@@ -18,13 +18,13 @@
         <td>{{ task.task2 }}</td>
   
         <td width="75" class="center aligned" >
-          <router-link :to="{ name: 'show', params: { id: task._id }}">ดูรายละเอียด</router-link>
+          <router-link :to="{ name: 'show', params: { id: task._id }}"><a2>ดูรายละเอียด</a2></router-link>
         </td>
         <td width="75" class="center aligned">
           <router-link :to="{ name: 'edit', params: { id: task._id }}"><a1>แก้ไข</a1></router-link>
         </td>
         <td width="75" class="center aligned" @click.prevent="onDestroy(task._id)">
-          <a3 :href="`/tasks/${task._id}`">ลบ</a3>
+          <a :href="`/tasks/${task._id}`"><a3>ลบ</a3></a>
         </td>
       </tr>
     </table>
@@ -60,6 +60,9 @@ export default {
 </script>
 <style>
 
+a2{
+  color: rgba(15, 100, 228, 0.815);
+}
 a1{
   color: rgb(236, 130, 9);
 }
