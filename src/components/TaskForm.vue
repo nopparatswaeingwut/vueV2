@@ -3,15 +3,27 @@
     <p v-if="errorsPresent" class="error">กรอกข้อมูลให้ครบถ้วน</p>
     <div class="ui labeled input fluid">
       <div class="ui label">
-        <i class="calendar plus icon"></i>ชื่อ
+        <i class=""></i>ชื่อ
       </div>
       <input type="text" placeholder="" v-model="task.task1" />
     </div>
     <div class="ui labeled input fluid">
       <div class="ui label">
-   <i class="info circle icon"></i> รายละเอียด
+   <i class=""></i> ที่อยู่
       </div>
       <input type="text" placeholder="" v-model="task.task2" />
+    </div>
+    <div class="ui labeled input fluid">
+      <div class="ui label">
+        <i class=""></i>อายุ
+      </div>
+      <input type="number" placeholder="" v-model="task.task3" />
+    </div>
+    <div class="ui labeled input fluid">
+      <div class="ui label">
+        <i class=""></i>งานอดิเรก
+      </div>
+      <input type="text" placeholder="" v-model="task.task4" />
     </div>
     <button class="positive ui button">ตกลง</button>
   </form>
@@ -26,7 +38,9 @@ export default {
       default: () => {
         return {
           task1: '',
-          task2: ''
+          task2: '',
+          task3: '',
+          task4: '',
         };
       }
     }
@@ -38,9 +52,15 @@ export default {
   },
   methods: {
     onSubmit: function() {
-      if (this.task.task1 === '' || this.task.task2 === '') {
+      if (this.task.task1 === '' || this.task.task2 === '') 
+      {
         this.errorsPresent = true;
-      } else {
+      }
+      if (this.task.task3 === '' || this.task.task4 === '') 
+      {
+        this.errorsPresent = true;
+      } 
+      else {
     
         this.$emit('createOrUpdate', this.task);
       }
