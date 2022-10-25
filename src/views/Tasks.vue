@@ -6,9 +6,9 @@
     <table id="tasks" class="ui celled compact table">
       <thead>
         <tr>
-            <th><i class="calendar plus icon "></i>ชื่อ</th>
-            <th><i class="info circle icon"></i>รายละเอียด</th>
-            <th><i class="lock open icon "></i></th>
+            <th><i class="tasks icon "></i>ชื่อ</th>
+            <th><i class=""></i>รายละเอียด</th>
+            <th><i class="search icon "></i></th>
             <th><i class="edit icon"></i></th>
             <th><i class="trash icon"></i></th>
         </tr>
@@ -16,14 +16,14 @@
       <tr v-for="(task, i) in tasks" :key="i">
         <td>{{ task.task1 }}</td>
         <td>{{ task.task2 }}</td>
-        <td width="75" class="center aligned">
+        <td width="75" class="center aligned" >
           <router-link :to="{ name: 'show', params: { id: task._id }}">ดูรายละเอียด</router-link>
         </td>
         <td width="75" class="center aligned">
-          <router-link :to="{ name: 'edit', params: { id: task._id }}">แก้ไข</router-link>
+          <router-link :to="{ name: 'edit', params: { id: task._id }}"><a1>แก้ไข</a1></router-link>
         </td>
         <td width="75" class="center aligned" @click.prevent="onDestroy(task._id)">
-          <a :href="`/tasks/${task._id}`">ลบ</a>
+          <a3 :href="`/tasks/${task._id}`">ลบ</a3>
         </td>
       </tr>
     </table>
@@ -57,3 +57,12 @@ export default {
   }
 };
 </script>
+<style>
+
+a1{
+  color: rgb(236, 130, 9);
+}
+a3{
+  color: rgba(228, 21, 49, 0.733);
+}
+</style>
