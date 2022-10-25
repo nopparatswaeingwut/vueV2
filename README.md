@@ -1,4 +1,5 @@
 # Exclude the server folder from the parent folder.
+# IS link server https://github.com/nopparatswaeingwut/serverVueV2
 # vuecrudapp
 
 ## Project setup
