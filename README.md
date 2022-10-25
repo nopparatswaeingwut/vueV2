@@ -1,4 +1,4 @@
-# Exclude the server folder from the parent folder.
+
 # link server https://github.com/nopparatswaeingwut/serverVueV2
 # vuecrudapp
 
