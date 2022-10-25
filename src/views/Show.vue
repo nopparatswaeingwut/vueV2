@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>รายละเอียด</h1>
+    <h1>#รายละเอียด</h1>
     <flash-message></flash-message>
     <div class="ui labeled input fluid">
-      <div class="ui label">
+      <div class="ui label ">
       <i class="tasks icon"></i>  ชื่อ
       </div>
       <input type="text" readonly  :value="task.task1"/>

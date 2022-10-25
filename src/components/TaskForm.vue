@@ -1,6 +1,6 @@
 <template>
  <form action="#" @submit.prevent="onSubmit">
-    <p v-if="errorsPresent" class="error">Please fill out both fields!</p>
+    <p v-if="errorsPresent" class="error">กรอกข้อมูลให้ครบถ้วน</p>
     <div class="ui labeled input fluid">
       <div class="ui label">
         <i class="calendar plus icon"></i>ชื่อ

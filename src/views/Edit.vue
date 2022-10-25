@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>แก้ไขรายชื่อ</h1>
+    <h1>#แก้ไขรายการ</h1>
     <flash-message></flash-message>
     <task-form @createOrUpdate="createOrUpdate" :task=this.task></task-form>
   </div>

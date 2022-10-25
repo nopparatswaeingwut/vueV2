@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <h1>รายชื่อ</h1>
+  <div >
+    <h1>#รายชื่อ</h1>
     <flash-message></flash-message>
     <div v-if="tasks.length > 0">
     <table id="tasks" class="ui celled compact table">
       <thead>
         <tr>
-            <th><i class="calendar plus icon"></i>ชื่อ</th>
+            <th><i class="calendar plus icon "></i>ชื่อ</th>
             <th><i class="info circle icon"></i>รายละเอียด</th>
-            <th><i class="lock open icon"></i></th>
+            <th><i class="lock open icon "></i></th>
             <th><i class="edit icon"></i></th>
             <th><i class="trash icon"></i></th>
         </tr>
