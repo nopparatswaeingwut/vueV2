@@ -4,10 +4,10 @@
       <div class="ui center aligned container">
         <div class="ui large secondary inverted pointing menu compact">
           <router-link to="/tasks" exact class="item">
-           <i class="tasks icon"></i> หน้าหลัก
+           <i class="home icon"></i> หน้าหลัก
           </router-link>
           <router-link to="/tasks/new" class="item">
-            <i class="plus circle icon"></i> เพิ่ม
+            <i class="plus circle icon"></i> เพิ่มรายการ
           </router-link>
       
         </div>
@@ -15,7 +15,7 @@
     </div>
     <div class="ui text container">
       <div class="ui one column grid">
-        <div class="column ">
+        <div class="column "> 
           <router-view />
         </div>
       </div>
@@ -28,6 +28,8 @@ export default {
 };
 </script>
 <style>
+
+
 #app > div.navbar {
   margin-bottom: 1.5em;
   background-color: #424242;
@@ -52,4 +54,5 @@ button.ui.button {
   margin-top: 15px;
   display: block;
 }
+
 </style>

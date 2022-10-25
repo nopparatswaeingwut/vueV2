@@ -41,7 +41,7 @@ export default {
       if (this.task.task1 === '' || this.task.task2 === '') {
         this.errorsPresent = true;
       } else {
-        //  $emit() function that allows you to pass custom events up the component tree.
+    
         this.$emit('createOrUpdate', this.task);
       }
     }

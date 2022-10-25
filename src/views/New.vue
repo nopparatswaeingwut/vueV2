@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>#เพื่มรายชื่อ</h1>
+    <h1>#เพื่มรายการ</h1>
     <task-form @createOrUpdate="createOrUpdate"></task-form>
   </div>
 </template>
