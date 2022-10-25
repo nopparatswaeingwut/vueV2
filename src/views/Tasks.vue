@@ -14,8 +14,8 @@
         </tr>
       </thead>
       <tr v-for="(task, i) in tasks" :key="i">
-        <td>{{ task.task1 }}</td>
-        <td>{{ task.task2 }}</td>
+        <td>{{ task.Name }}</td>
+        <td>{{ task.details }}</td>
   
         <td width="75" class="center aligned" >
           <router-link :to="{ name: 'show', params: { id: task._id }}"><a2>ดูรายละเอียด</a2></router-link>

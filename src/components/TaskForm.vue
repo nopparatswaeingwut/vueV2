@@ -5,25 +5,25 @@
       <div class="ui label">
         <i class=""></i>ชื่อ
       </div>
-      <input type="text" placeholder="" v-model="task.task1" />
+      <input type="text" placeholder="" v-model="task.Name" />
     </div>
     <div class="ui labeled input fluid">
       <div class="ui label">
-   <i class=""></i> ที่อยู่
+   <i class=""></i> รายละเอียด
       </div>
-      <input type="text" placeholder="" v-model="task.task2" />
+      <input type="text" placeholder="" v-model="task.details" />
     </div>
     <div class="ui labeled input fluid">
       <div class="ui label">
         <i class=""></i>อายุ
       </div>
-      <input type="number" placeholder="" v-model="task.task3" />
+      <input type="number" placeholder="" v-model="task.age" />
     </div>
     <div class="ui labeled input fluid">
       <div class="ui label">
         <i class=""></i>งานอดิเรก
       </div>
-      <input type="text" placeholder="" v-model="task.task4" />
+      <input type="text" placeholder="" v-model="task.hobby" />
     </div>
     <button class="positive ui button">ตกลง</button>
   </form>
@@ -37,10 +37,10 @@ export default {
       required: false,
       default: () => {
         return {
-          task1: '',
-          task2: '',
-          task3: '',
-          task4: '',
+          Name: '',
+          details: '',
+          age: '',
+          hobby: '',
         };
       }
     }
@@ -52,11 +52,11 @@ export default {
   },
   methods: {
     onSubmit: function() {
-      if (this.task.task1 === '' || this.task.task2 === '') 
+      if (this.task.Name === '' || this.task.details === '') 
       {
         this.errorsPresent = true;
       }
-      if (this.task.task3 === '' || this.task.task4 === '') 
+      if (this.task.age === '' || this.task.hobby === '') 
       {
         this.errorsPresent = true;
       } 

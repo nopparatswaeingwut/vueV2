@@ -6,25 +6,25 @@
       <div class="ui label ">
       <i class=""></i>  ชื่อ
       </div>
-      <input type="text" readonly  :value="task.task1"/>
+      <input type="text" readonly  :value="task.Name"/>
     </div>
      <div class="ui labeled input fluid">
       <div class="ui label">
         <i class=""></i> รายละเอียด
       </div>
-      <input type="text" readonly  :value="task.task2"/>
+      <input type="text" readonly  :value="task.details"/>
     </div>
     <div class="ui labeled input fluid">
       <div class="ui label ">
       <i class=" "></i>  อายุ
       </div>
-      <input type="number" readonly  :value="task.task3"/>
+      <input type="number" readonly  :value="task.age"/>
     </div>
     <div class="ui labeled input fluid">
       <div class="ui label ">   
       <i class=""></i>  งานอดิเรก
       </div>
-      <input type="text" readonly  :value="task.task4"/>
+      <input type="text" readonly  :value="task.hobby"/>
     </div>
     <div class="actions">
       <router-link :to="{ name: 'edit', params: { id: this.$route.params.id }}">
