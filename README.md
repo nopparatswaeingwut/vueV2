@@ -1,5 +1,5 @@
 
-# link server https://github.com/nopparatswaeingwut/serverVueV2
+link server https://github.com/nopparatswaeingwut/serverVueV2
 # vuecrudapp
 
 ## Project setup
