@@ -1,3 +1,4 @@
+# Exclude the server folder from the parent folder.
 # vuecrudapp
 
 ## Project setup
