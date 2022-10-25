@@ -3,7 +3,7 @@
     <h1>#รายชื่อ</h1>
     <flash-message></flash-message>
     <div v-if="tasks.length > 0">
-    <table id="tasks" class="ui celled compact table">
+    <table id="tasks" class="ui celled compact table ">
       <thead>
         <tr>
             <th><i class="tasks icon "></i>ชื่อ</th>
@@ -17,7 +17,7 @@
         <td>{{ task.name }}</td>
         <td>{{ task.details }}</td>
   
-        <td width="75" class="center aligned" >
+        <td width="75" class="center aligned ">
           <router-link :to="{ name: 'show', params: { id: task._id }}">ดูรายละเอียด</router-link>
         </td>
         <td width="75" class="center aligned">

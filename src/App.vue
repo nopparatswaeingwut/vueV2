@@ -33,6 +33,8 @@ export default {
 #app > div.navbar {
   margin-bottom: 1.5em;
   background-color: #424242;
+  border-radius: 6ch;
+ 
 }
 .myFlash {
   width: 250px;
