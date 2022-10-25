@@ -14,7 +14,7 @@
         </tr>
       </thead>
       <tr v-for="(task, i) in tasks" :key="i">
-        <td>{{ task.Name }}</td>
+        <td>{{ task.name }}</td>
         <td>{{ task.details }}</td>
   
         <td width="75" class="center aligned" >

@@ -6,7 +6,7 @@
       <div class="ui label ">
       <i class=""></i>  ชื่อ
       </div>
-      <input type="text" readonly  :value="task.Name"/>
+      <input type="text" readonly  :value="task.name"/>
     </div>
      <div class="ui labeled input fluid">
       <div class="ui label">

@@ -5,7 +5,7 @@
       <div class="ui label">
         <i class=""></i>ชื่อ
       </div>
-      <input type="text" placeholder="" v-model="task.Name" />
+      <input type="text" placeholder="" v-model="task.name" />
     </div>
     <div class="ui labeled input fluid">
       <div class="ui label">
@@ -37,7 +37,7 @@ export default {
       required: false,
       default: () => {
         return {
-          Name: '',
+          name: '',
           details: '',
           age: '',
           hobby: '',
@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     onSubmit: function() {
-      if (this.task.Name === '' || this.task.details === '') 
+      if (this.task.name === '' || this.task.details === '') 
       {
         this.errorsPresent = true;
       }
