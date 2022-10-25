@@ -1,0 +1,32 @@
+<template>
+  <div>
+    <h1>แก้ไขรายชื่อ</h1>
+    <flash-message></flash-message>
+    <task-form @createOrUpdate="createOrUpdate" :task=this.task></task-form>
+  </div>
+</template>
+<script>
+import taskForm from '../components/TaskForm.vue';
+import { api } from '../helpers/Helpers';
+export default {
+  name: 'edit',
+  components: {
+    'task-form': taskForm
+  },
+  data: function() {
+    return {
+      task: {}
+    };
+  },
+  methods: {
+    createOrUpdate: async function(task) {
+      await api.updatetask(task);
+      this.flash('แก้ไขสำเร็จ', 'success');
+      this.$router.push(`/tasks/${task._id}`);
+    }
+  },
+  async mounted() {
+    this.task = await api.gettask(this.$route.params.id);
+  }
+};
+</script>
